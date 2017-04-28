@@ -1,0 +1,4 @@
+nl.goodbytes.network.utility.eip.impl.AmazonResolver
+nl.goodbytes.network.utility.eip.impl.ICanHazIpResolver
+nl.goodbytes.network.utility.eip.impl.IfConfigMeResolver
+nl.goodbytes.network.utility.eip.impl.IpifyResolver
