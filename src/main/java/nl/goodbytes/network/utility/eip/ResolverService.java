@@ -34,7 +34,11 @@ import java.util.logging.Logger;
  * The result of a successful execution can be cached - unsuccessful results are not. When a cached result is available,
  * but expired, then the cached result will only be returned after all web services failed to generate an updated value.
  *
- * This implementation prefers webservices that produce faster responses with less failures over others.
+ * This implementation prefers web services that produce faster responses with less failures over others.
+ *
+ * This is a synchronous implementation: the thread that invokes the various methods used to resolve the external IP
+ * address will block until a result is returned. As multiple network requests can be made as part of the execution,
+ * the duration of such blocks can be significant.
  *
  * @author Guus der Kinderen, guus@goodbytes.nl
  */
